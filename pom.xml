@@ -11,6 +11,7 @@
     <description>依赖管理</description>
 
     <profiles>
+        <!-- 开发环境 -->
         <profile>
             <id>dev</id>
             <properties>
@@ -21,20 +22,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
-        <profile>
-            <id>local</id>
-            <properties>
-                <spring.profiles.active>local</spring.profiles.active>
-                <spring.application.name>${project.artifactId}</spring.application.name>
-            </properties>
-        </profile>
-        <profile>
-            <id>sit</id>
-            <properties>
-                <spring.profiles.active>sit</spring.profiles.active>
-                <spring.application.name>${project.artifactId}</spring.application.name>
-            </properties>
-        </profile>
+        <!-- 系统集成测试环境 -->
         <profile>
             <id>uat</id>
             <properties>
@@ -42,6 +30,7 @@
                 <spring.application.name>${project.artifactId}</spring.application.name>
             </properties>
         </profile>
+        <!-- 生产环境 -->
         <profile>
             <id>pro</id>
             <properties>
@@ -59,7 +48,7 @@
     </developers>
 
     <properties>
-        <smart.version>1.0.0-SNAPSHOT</smart.version>
+        <ueboot.version>1.0.0-SNAPSHOT</ueboot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
         <java.version>11</java.version>
@@ -75,7 +64,7 @@
         <spring.ldap.version>2.3.4.RELEASE</spring.ldap.version>
         <lombok.version>1.18.22</lombok.version>
         <apollo.version>1.9.0</apollo.version>
-        <xxl.job.version>2.0.1</xxl.job.version>
+        <xxl.job.version>2.3.0</xxl.job.version>
         <sa.token.version>1.26.0</sa.token.version>
         <oracle.version>11.2.0.4</oracle.version>
         <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
@@ -189,22 +178,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- 携程 Apollo 分布式配置 -->
-            <dependency>
-                <groupId>com.ctrip.framework.apollo</groupId>
-                <artifactId>apollo-client-config-data</artifactId>
-                <version>${apollo.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.google.guava</groupId>
-                        <artifactId>guava</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.google.inject</groupId>
-                        <artifactId>guice</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
             <!--配置文件加解密-->
             <dependency>
                 <groupId>com.github.ulisesbocchio</groupId>
@@ -229,12 +202,6 @@
                 <artifactId>spring-rabbit</artifactId>
                 <version>${spring.rabbitmq.version}</version>
             </dependency>
-            <!-- Spring LDAP -->
-            <dependency>
-                <groupId>org.springframework.ldap</groupId>
-                <artifactId>spring-ldap-core</artifactId>
-                <version>${spring.ldap.version}</version>
-            </dependency>
             <!-- XXL-JOB 平台 -->
             <dependency>
                 <groupId>com.xuxueli</groupId>
@@ -246,12 +213,6 @@
                 <groupId>cn.dev33</groupId>
                 <artifactId>sa-token-spring-boot-starter</artifactId>
                 <version>${sa.token.version}</version>
-            </dependency>
-            <!-- Oracle JDBC -->
-            <dependency>
-                <groupId>com.oracle.database.jdbc</groupId>
-                <artifactId>ojdbc6</artifactId>
-                <version>${oracle.version}</version>
             </dependency>
             <!--ORM框架-->
             <dependency>
@@ -417,12 +378,6 @@
                         <artifactId>commons-collections</artifactId>
                     </exclusion>
                 </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>com.cignacmb</groupId>
-                <artifactId>common-util</artifactId>
-                <version>1.0.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
