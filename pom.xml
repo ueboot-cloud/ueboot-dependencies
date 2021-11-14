@@ -448,12 +448,12 @@
         </pluginManagement>
     </build>
 
-    <!--使用coding-maven仓库，确保common-util包能下载-->
+    <!--使用coding-maven仓库-->
     <repositories>
         <repository>
-            <id>central</id>
-            <name>central repository</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <id>yaakua-ueboot-framwork-public</id>
+            <name>public</name>
+            <url>https://yaakua.coding.net/public-artifacts/ueboot-framwork/public/packages</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -464,22 +464,12 @@
                 <updatePolicy>never</updatePolicy>
             </snapshots>
         </repository>
-        <repository>
-            <id>coding-public-smart</id>
-            <name>tencent</name>
-            <url>http://maven.xiqiao.io/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>aliyun-plugin</id>
-            <url>https://maven.aliyun.com/repository/public</url>
+            <id>yaakua-ueboot-framwork-public</id>
+            <name>public</name>
+            <url>https://yaakua.coding.net/public-artifacts/ueboot-framwork/public/packages</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -487,42 +477,13 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-        <pluginRepository>
-            <id>coding-public-smart</id>
-            <name>tencent</name>
-            <url>http://maven.xiqiao.io/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
     </pluginRepositories>
-
-    <!--<repositories>
+    <distributionManagement>
         <repository>
-            <id>public</id>
-            <name>aliyun nexus</name>
-            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
+            <!--必须与 settings.xml 的 id 一致-->
+            <id>yaakua-ueboot-framwork-public</id>
+            <name>public</name>
+            <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-framwork/public/</url>
         </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>public</id>
-            <name>aliyun nexus</name>
-            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>-->
-
+    </distributionManagement>
 </project>
