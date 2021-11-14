@@ -455,36 +455,6 @@
         </pluginManagement>
     </build>
 
-    <!--使用coding-maven仓库-->
-    <repositories>
-        <repository>
-            <id>yaakua-ueboot-framwork-public</id>
-            <name>public</name>
-            <url>https://yaakua.coding.net/public-artifacts/ueboot-cloud/public/packages</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>yaakua-ueboot-framwork-public</id>
-            <name>public</name>
-            <url>https://yaakua.coding.net/public-artifacts/ueboot-cloud/public/packages</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
     <distributionManagement>
         <repository>
             <!--必须与 settings.xml 的 id 一致-->
