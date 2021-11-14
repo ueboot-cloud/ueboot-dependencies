@@ -84,6 +84,7 @@
         <commons-collections.version>3.2.2</commons-collections.version>
         <aliyun.oss.version>3.13.1</aliyun.oss.version>
         <aws.oss.version>1.11.580</aws.oss.version>
+        <minio.oss.version>8.3.3</minio.oss.version>
         <easyexcel.version>3.0.0-beta3</easyexcel.version>
         <pinyin4j.version>2.5.0</pinyin4j.version>
         <line-parser.version>0.5.0</line-parser.version>
@@ -254,6 +255,12 @@
                 <groupId>com.amazonaws</groupId>
                 <artifactId>aws-java-sdk-core</artifactId>
                 <version>${aws.oss.version}</version>
+            </dependency>
+            <!-- MinIo OSS-->
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>${minio.oss.version}</version>
             </dependency>
             <!--Lombok-->
             <dependency>
