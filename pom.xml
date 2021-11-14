@@ -490,7 +490,7 @@
             <!--必须与 settings.xml 的 id 一致-->
             <id>yaakua-ueboot-framwork-public</id>
             <name>public</name>
-            <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-framwork/public/</url>
+            <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
         </repository>
     </distributionManagement>
 </project>
