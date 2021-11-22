@@ -83,8 +83,8 @@
         <common-pool.version>2.6.2</common-pool.version>
         <commons-collections.version>3.2.2</commons-collections.version>
         <aliyun.oss.version>3.13.1</aliyun.oss.version>
-        <aws.oss.version>1.11.580</aws.oss.version>
         <minio.oss.version>8.3.3</minio.oss.version>
+        <cos.oss.version>5.6.54</cos.oss.version>
         <easyexcel.version>3.0.0-beta3</easyexcel.version>
         <pinyin4j.version>2.5.0</pinyin4j.version>
         <line-parser.version>0.5.0</line-parser.version>
@@ -93,6 +93,9 @@
         <velocity.version>1.7</velocity.version>
         <javafaker.version>1.0.2</javafaker.version>
         <jmockdata.version>4.3.0</jmockdata.version>
+        <weixin-java-mp.version>4.1.0</weixin-java-mp.version>
+        <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
+        <html2pdf.version>4.0.0</html2pdf.version>
     </properties>
 
     <dependencies>
@@ -251,16 +254,17 @@
                 <artifactId>aws-java-sdk-s3</artifactId>
                 <version>${aws.oss.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.amazonaws</groupId>
-                <artifactId>aws-java-sdk-core</artifactId>
-                <version>${aws.oss.version}</version>
-            </dependency>
             <!-- MinIo OSS-->
             <dependency>
                 <groupId>io.minio</groupId>
                 <artifactId>minio</artifactId>
                 <version>${minio.oss.version}</version>
+            </dependency>
+            <!-- Cos OSS-->
+            <dependency>
+                <groupId>com.qcloud</groupId>
+                <artifactId>cos_api</artifactId>
+                <version>${cos.oss.version}</version>
             </dependency>
             <!--Lombok-->
             <dependency>
@@ -385,6 +389,24 @@
                         <artifactId>commons-collections</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <!--微信开发工具-->
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-mp</artifactId>
+                <version>${weixin-java-mp.version}</version>
+            </dependency>
+            <!--腾讯短信平台SDK-->
+            <dependency>
+                <groupId>com.tencentcloudapi</groupId>
+                <artifactId>tencentcloud-sdk-java</artifactId>
+                <version>${tencentcloud.sak.version}</version>
+            </dependency>
+            <!-- HTML转PDF工具 -->
+            <dependency>
+                <groupId>com.itextpdf</groupId>
+                <artifactId>html2pdf</artifactId>
+                <version>${html2pdf.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
