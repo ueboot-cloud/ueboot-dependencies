@@ -21,6 +21,32 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
+            <repositories>
+                <repository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
         </profile>
         <!-- 系统集成测试环境 -->
         <profile>
@@ -29,6 +55,32 @@
                 <spring.profiles.active>uat</spring.profiles.active>
                 <spring.application.name>${project.artifactId}</spring.application.name>
             </properties>
+            <repositories>
+                <repository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
         </profile>
         <!-- 生产环境 -->
         <profile>
@@ -37,6 +89,32 @@
                 <spring.profiles.active>prod</spring.profiles.active>
                 <spring.application.name>${project.artifactId}</spring.application.name>
             </properties>
+            <repositories>
+                <repository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
         </profile>
     </profiles>
 
@@ -247,12 +325,6 @@
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
                 <version>${aliyun.oss.version}</version>
-            </dependency>
-            <!-- AWS OSS-->
-            <dependency>
-                <groupId>com.amazonaws</groupId>
-                <artifactId>aws-java-sdk-s3</artifactId>
-                <version>${aws.oss.version}</version>
             </dependency>
             <!-- MinIo OSS-->
             <dependency>
@@ -494,7 +566,7 @@
     <distributionManagement>
         <repository>
             <!--必须与 settings.xml 的 id 一致-->
-            <id>yaakua-ueboot-framwork-public</id>
+            <id>yaakua-ueboot-cloud-public</id>
             <name>public</name>
             <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
         </repository>
