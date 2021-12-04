@@ -148,7 +148,7 @@
         <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
         <mybatis-plus-meta.version>1.0.6</mybatis-plus-meta.version>
         <dynamic-datasource.version>3.4.0</dynamic-datasource.version>
-        <druid.version>1.2.6</druid.version>
+        <druid.version>1.2.8</druid.version>
         <jasypt.version>2.1.0</jasypt.version>
         <hutool.version>5.7.14</hutool.version>
         <zxing.core.version>3.4.1</zxing.core.version>
