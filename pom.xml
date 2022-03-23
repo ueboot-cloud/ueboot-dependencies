@@ -146,7 +146,7 @@
         <sa.token.version>1.26.0</sa.token.version>
         <oracle.version>11.2.0.4</oracle.version>
         <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
-        <mybatis-plus-meta.version>1.0.6</mybatis-plus-meta.version>
+        <mybatis-plus-meta.version>1.2.3</mybatis-plus-meta.version>
         <dynamic-datasource.version>3.4.0</dynamic-datasource.version>
         <druid.version>1.2.8</druid.version>
         <jasypt.version>2.1.0</jasypt.version>
