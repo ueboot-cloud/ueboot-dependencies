@@ -138,6 +138,10 @@
             <name>ervinyang</name>
             <email>ervinyang@foxmail.com</email>
         </developer>
+        <developer>
+            <name>yaakua</name>
+            <email>yaakua@126.com</email>
+        </developer>
     </developers>
 
     <properties>
@@ -156,10 +160,8 @@
         <spring.rabbitmq.version>2.3.10</spring.rabbitmq.version>
         <spring.ldap.version>2.3.4.RELEASE</spring.ldap.version>
         <lombok.version>1.18.22</lombok.version>
-        <apollo.version>1.9.0</apollo.version>
         <xxl-job.version>2.3.0</xxl-job.version>
-        <sa-token.version>1.26.0</sa-token.version>
-        <oracle.version>11.2.0.4</oracle.version>
+        <sa-token.version>1.29.0</sa-token.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <mybatis-plus.generator.vesion>3.5.0</mybatis-plus.generator.vesion>
         <dynamic-datasource.version>3.5.1</dynamic-datasource.version>
