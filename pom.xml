@@ -5,7 +5,7 @@
 
     <groupId>com.ueboot.cloud</groupId>
     <artifactId>ueboot-dependencies</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>依赖管理</description>
@@ -17,6 +17,7 @@
             <properties>
                 <spring.profiles.active>dev</spring.profiles.active>
                 <spring.application.name>${project.artifactId}</spring.application.name>
+                <ueboot.profiles.active>none</ueboot.profiles.active>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -54,6 +55,7 @@
             <properties>
                 <spring.profiles.active>uat</spring.profiles.active>
                 <spring.application.name>${project.artifactId}</spring.application.name>
+                <ueboot.profiles.active>none</ueboot.profiles.active>
             </properties>
             <repositories>
                 <repository>
@@ -88,6 +90,7 @@
             <properties>
                 <spring.profiles.active>prod</spring.profiles.active>
                 <spring.application.name>${project.artifactId}</spring.application.name>
+                <ueboot.profiles.active>none</ueboot.profiles.active>
             </properties>
             <repositories>
                 <repository>
@@ -116,6 +119,18 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>
+        <profile>
+            <id>bbmt</id>
+            <properties>
+                <ueboot.profiles.active>bbmt</ueboot.profiles.active>
+            </properties>
+        </profile>
+        <profile>
+            <id>yinziai</id>
+            <properties>
+                <ueboot.profiles.active>yinziai</ueboot.profiles.active>
+            </properties>
+        </profile>
     </profiles>
 
     <developers>
@@ -123,57 +138,62 @@
             <name>ervinyang</name>
             <email>ervinyang@foxmail.com</email>
         </developer>
+        <developer>
+            <name>yaakua</name>
+            <email>yaakua@126.com</email>
+        </developer>
     </developers>
 
     <properties>
-        <ueboot.version>1.1.0-SNAPSHOT</ueboot.version>
+        <ueboot.version>1.1.1-SNAPSHOT</ueboot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
         <java.version>11</java.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <!-- 框架和工具库 -->
-        <spring.boot.version>2.5.2</spring.boot.version>
-        <spring.cloud.version>2020.0.3</spring.cloud.version>
-        <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
+        <!-- 框架 -->
+        <spring.boot.version>2.6.6</spring.boot.version>
+        <spring.cloud.version>2021.0.1</spring.cloud.version>
+        <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
         <spring.boot.admin.version>2.4.3</spring.boot.admin.version>
         <spring.rabbitmq.version>2.3.10</spring.rabbitmq.version>
         <spring.ldap.version>2.3.4.RELEASE</spring.ldap.version>
         <lombok.version>1.18.22</lombok.version>
-        <apollo.version>1.9.0</apollo.version>
-        <xxl.job.version>2.3.0</xxl.job.version>
-        <sa.token.version>1.26.0</sa.token.version>
-        <oracle.version>11.2.0.4</oracle.version>
-        <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
-        <mybatis-plus-meta.version>1.2.3</mybatis-plus-meta.version>
-        <dynamic-datasource.version>3.4.0</dynamic-datasource.version>
+        <xxl-job.version>2.3.0</xxl-job.version>
+        <sa-token.version>1.29.0</sa-token.version>
+        <mybatis-plus.version>3.5.1</mybatis-plus.version>
+        <mybatis-plus.generator.vesion>3.5.0</mybatis-plus.generator.vesion>
+        <dynamic-datasource.version>3.5.1</dynamic-datasource.version>
         <druid.version>1.2.8</druid.version>
-        <jasypt.version>2.1.0</jasypt.version>
-        <hutool.version>5.8.0.M3</hutool.version>
+
+        <!-- 工具库 -->
+        <hutool.version>5.7.22</hutool.version>
         <zxing.core.version>3.4.1</zxing.core.version>
         <guava.version>31.0.1-jre</guava.version>
         <google.inject.version>5.0.1</google.inject.version>
-        <captcha.version>2.2.0</captcha.version>
         <easy-captcha>1.6.2</easy-captcha>
         <commons.io.version>2.10.0</commons.io.version>
         <commons.fileupload.version>1.4</commons.fileupload.version>
         <common-pool.version>2.6.2</common-pool.version>
         <commons-collections.version>3.2.2</commons-collections.version>
-        <aliyun.oss.version>3.13.1</aliyun.oss.version>
-        <minio.oss.version>8.3.3</minio.oss.version>
-        <cos.oss.version>5.6.54</cos.oss.version>
         <easyexcel.version>3.0.0-beta3</easyexcel.version>
         <pinyin4j.version>2.5.0</pinyin4j.version>
         <line-parser.version>0.5.0</line-parser.version>
         <reflectasm.version>1.11.9</reflectasm.version>
-        <mybatis-plus.generator.vesion>3.5.0</mybatis-plus.generator.vesion>
         <velocity.version>1.7</velocity.version>
-        <javafaker.version>1.0.2</javafaker.version>
-        <jmockdata.version>4.3.0</jmockdata.version>
+        <html2pdf.version>4.0.0</html2pdf.version>
+
+        <!-- 业务集成 -->
+        <aliyun.oss.version>3.13.1</aliyun.oss.version>
+        <minio.oss.version>8.3.3</minio.oss.version>
+        <cos.oss.version>5.6.54</cos.oss.version>
         <weixin-java-mp.version>4.1.0</weixin-java-mp.version>
         <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
-        <html2pdf.version>4.0.0</html2pdf.version>
+
+        <!-- 测试 -->
+        <javafaker.version>1.0.2</javafaker.version>
+        <jmockdata.version>4.3.0</jmockdata.version>
     </properties>
 
     <dependencies>
@@ -226,12 +246,12 @@
             <groupId>com.github.jsonzou</groupId>
             <artifactId>jmockdata</artifactId>
             <version>${jmockdata.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
-            <!-- Spring Boot 依赖 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -255,11 +275,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--配置文件加解密-->
             <dependency>
-                <groupId>com.github.ulisesbocchio</groupId>
-                <artifactId>jasypt-spring-boot-starter</artifactId>
-                <version>${jasypt.version}</version>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-dependencies</artifactId>
+                <version>${spring.boot.admin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <!--监控服务端-->
             <dependency>
@@ -283,25 +304,19 @@
             <dependency>
                 <groupId>com.xuxueli</groupId>
                 <artifactId>xxl-job-core</artifactId>
-                <version>${xxl.job.version}</version>
+                <version>${xxl-job.version}</version>
             </dependency>
             <!-- SA Token 权限管理 -->
             <dependency>
                 <groupId>cn.dev33</groupId>
                 <artifactId>sa-token-spring-boot-starter</artifactId>
-                <version>${sa.token.version}</version>
+                <version>${sa-token.version}</version>
             </dependency>
             <!--ORM框架-->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
-            </dependency>
-            <!-- 企业级开发插件 -->
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-mate-starter</artifactId>
-                <version>${mybatis-plus-meta.version}</version>
             </dependency>
             <!--动态数据源-->
             <dependency>
@@ -490,7 +505,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>3.10.1</version>
                     <configuration>
                         <source>11</source>
                         <target>11</target>
@@ -500,7 +515,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>2.3.7.RELEASE</version>
+                    <version>${spring.boot.version}</version>
                     <configuration>
                         <finalName>${project.build.finalName}</finalName>
                         <layers>
@@ -544,7 +559,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>2.2.1</version>
+                    <version>3.2.1</version>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
