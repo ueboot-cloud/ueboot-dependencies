@@ -4,3 +4,4 @@
 /.idea/
 !/ueboot-ui-system/yarn.lock
 !/ueboot-ui-portal/yarn.lock
+!/ueboot-ui-system/yarn-error.log
