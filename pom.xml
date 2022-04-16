@@ -188,6 +188,8 @@
         <aliyun.oss.version>3.13.1</aliyun.oss.version>
         <minio.oss.version>8.3.3</minio.oss.version>
         <cos.oss.version>5.6.54</cos.oss.version>
+        <!--cos获取临时授权SDK-->
+        <cos.sts.oss.version>3.1.0</cos.sts.oss.version>
         <weixin-java-mp.version>4.1.0</weixin-java-mp.version>
         <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
 
@@ -347,6 +349,11 @@
                 <groupId>com.qcloud</groupId>
                 <artifactId>cos_api</artifactId>
                 <version>${cos.oss.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.qcloud</groupId>
+                <artifactId>cos-sts_api</artifactId>
+                <version>${cos.sts.oss.version}</version>
             </dependency>
             <!--Lombok-->
             <dependency>
