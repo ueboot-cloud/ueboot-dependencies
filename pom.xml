@@ -190,7 +190,7 @@
         <cos.oss.version>5.6.54</cos.oss.version>
         <!--cos获取临时授权SDK-->
         <cos.sts.oss.version>3.1.0</cos.sts.oss.version>
-        <weixin-java-mp.version>4.1.0</weixin-java-mp.version>
+        <wx-java.version>4.3.0</wx-java.version>
         <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
 
         <!-- 测试 -->
@@ -483,7 +483,17 @@
             <dependency>
                 <groupId>com.github.binarywang</groupId>
                 <artifactId>weixin-java-mp</artifactId>
-                <version>${weixin-java-mp.version}</version>
+                <version>${wx-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-miniapp</artifactId>
+                <version>${wx-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-pay</artifactId>
+                <version>${wx-java.version}</version>
             </dependency>
             <!--腾讯短信平台SDK-->
             <dependency>
