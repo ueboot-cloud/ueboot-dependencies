@@ -183,6 +183,7 @@
         <reflectasm.version>1.11.9</reflectasm.version>
         <velocity.version>1.7</velocity.version>
         <html2pdf.version>4.0.0</html2pdf.version>
+        <emoji-java.version>5.1.1</emoji-java.version>
 
         <!-- 业务集成 -->
         <aliyun.oss.version>3.13.1</aliyun.oss.version>
@@ -506,6 +507,12 @@
                 <groupId>com.itextpdf</groupId>
                 <artifactId>html2pdf</artifactId>
                 <version>${html2pdf.version}</version>
+            </dependency>
+            <!-- emoji处理工具 -->
+            <dependency>
+                <groupId>com.vdurmont</groupId>
+                <artifactId>emoji-java</artifactId>
+                <version>${emoji-java.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
