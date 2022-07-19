@@ -184,6 +184,7 @@
         <velocity.version>1.7</velocity.version>
         <html2pdf.version>4.0.0</html2pdf.version>
         <emoji-java.version>5.1.1</emoji-java.version>
+        <ip2region-version>2.6.1</ip2region-version>
 
         <!-- 业务集成 -->
         <aliyun.oss.version>3.13.1</aliyun.oss.version>
@@ -462,6 +463,12 @@
                 <artifactId>easyexcel</artifactId>
                 <version>${easyexcel.version}</version>
             </dependency>
+            <!-- IP转地区工具-->
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region-version}</version>
+            </dependency>
             <!-- 代码生成 -->
             <dependency>
                 <groupId>com.baomidou</groupId>
@@ -576,6 +583,7 @@
                             <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
                             <nonFilteredFileExtension>woff</nonFilteredFileExtension>
                             <nonFilteredFileExtension>woff2</nonFilteredFileExtension>
+                            <nonFilteredFileExtension>pem</nonFilteredFileExtension>
                         </nonFilteredFileExtensions>
                     </configuration>
                 </plugin>
