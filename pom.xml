@@ -503,6 +503,11 @@
                 <artifactId>weixin-java-pay</artifactId>
                 <version>${wx-java.version}</version>
             </dependency>
+             <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-open</artifactId>
+                <version>${wx-java.version}</version>
+            </dependency>
             <!--腾讯短信平台SDK-->
             <dependency>
                 <groupId>com.tencentcloudapi</groupId>
