@@ -5,7 +5,7 @@
 
     <groupId>com.ueboot.cloud</groupId>
     <artifactId>ueboot-dependencies</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>依赖管理</description>
@@ -145,7 +145,7 @@
     </developers>
 
     <properties>
-        <ueboot.version>1.1.1-SNAPSHOT</ueboot.version>
+        <ueboot.version>1.2.0-SNAPSHOT</ueboot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
         <java.version>11</java.version>
