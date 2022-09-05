@@ -5,7 +5,7 @@
 
     <groupId>com.ueboot.cloud</groupId>
     <artifactId>ueboot-dependencies</artifactId>
-    <version>1.2.0-SNAPSHOT</version>
+    <version>1.2.0</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>依赖管理</description>
