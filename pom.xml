@@ -163,7 +163,7 @@
         <spring.rabbitmq.version>2.3.10</spring.rabbitmq.version>
         <spring.ldap.version>2.3.4.RELEASE</spring.ldap.version>
         <lombok.version>1.18.22</lombok.version>
-        <xxl-job.version>2.3.0</xxl-job.version>
+        <xxl-job.version>2.3.1</xxl-job.version>
         <sa-token.version>1.29.0</sa-token.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <mybatis-plus.generator.vesion>3.5.0</mybatis-plus.generator.vesion>
