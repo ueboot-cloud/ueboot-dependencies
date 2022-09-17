@@ -197,6 +197,7 @@
         <cos.sts.oss.version>3.1.0</cos.sts.oss.version>
         <wx-java.version>4.3.0</wx-java.version>
         <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
+        <alipay.sdk.version>2.2.2</alipay.sdk.version>
 
         <!-- 测试 -->
         <javafaker.version>1.0.2</javafaker.version>
@@ -510,6 +511,12 @@
                 <groupId>com.github.binarywang</groupId>
                 <artifactId>weixin-java-open</artifactId>
                 <version>${wx-java.version}</version>
+            </dependency>
+            <!-- 支付宝支付SDK -->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-easysdk</artifactId>
+                <version>${alipay.sdk.version}</version>
             </dependency>
             <!--腾讯短信平台SDK-->
             <dependency>
