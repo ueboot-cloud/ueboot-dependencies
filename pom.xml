@@ -162,7 +162,6 @@
         <spring.boot.admin.version>2.4.3</spring.boot.admin.version>
         <spring.rabbitmq.version>2.3.10</spring.rabbitmq.version>
         <spring.ldap.version>2.3.4.RELEASE</spring.ldap.version>
-        <jackson.version.databind>2.14.0-rc3</jackson.version.databind>
         <lombok.version>1.18.22</lombok.version>
         <xxl-job.version>2.3.0</xxl-job.version>
         <sa-token.version>1.29.0</sa-token.version>
@@ -308,12 +307,6 @@
                 <groupId>org.springframework.amqp</groupId>
                 <artifactId>spring-rabbit</artifactId>
                 <version>${spring.rabbitmq.version}</version>
-            </dependency>
-            <!-- 漏洞修复 -->
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version.databind}</version>
             </dependency>
             <!-- XXL-JOB 平台 -->
             <dependency>
