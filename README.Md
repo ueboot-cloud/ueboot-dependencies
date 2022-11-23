@@ -1,3 +1,15 @@
+
+# 依赖说明
+
+
+# 参考文档
+
+#### common-random
+> https://github.com/yindz/common-random
+
+
+
+
 # 更新记录
 
 #### 2022-04-15
