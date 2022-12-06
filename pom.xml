@@ -202,6 +202,7 @@
         <!-- 测试 -->
         <javafaker.version>1.0.2</javafaker.version>
         <jmockdata.version>4.3.0</jmockdata.version>
+        <commmon-random.vrsion>1.0.18</commmon-random.vrsion>
     </properties>
 
     <dependencies>
@@ -254,6 +255,12 @@
             <groupId>com.github.jsonzou</groupId>
             <artifactId>jmockdata</artifactId>
             <version>${jmockdata.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.apifan.common</groupId>
+            <artifactId>common-random</artifactId>
+            <version>${commmon-random.vrsion}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -331,12 +338,6 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
-            </dependency>
-            <!--动态数据源-->
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
-                <version>${dynamic-datasource.version}</version>
             </dependency>
             <!-- 数据库链接池-->
             <dependency>
