@@ -24,9 +24,9 @@
             </activation>
             <repositories>
                 <repository>
-                    <id>yaakua-ueboot-cloud-public</id>
+                    <id>Public Repositories</id>
                     <name>public</name>
-                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <url>https://maven.xiqiao.io/content/groups/public/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -37,9 +37,9 @@
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
-                    <id>yaakua-ueboot-cloud-public</id>
+                    <id>Public Repositories</id>
                     <name>public</name>
-                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <url>https://maven.xiqiao.io/content/groups/public/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -59,9 +59,9 @@
             </properties>
             <repositories>
                 <repository>
-                    <id>yaakua-ueboot-cloud-public</id>
+                    <id>Public Repositories</id>
                     <name>public</name>
-                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <url>https://maven.xiqiao.io/content/groups/public/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -72,9 +72,9 @@
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
-                    <id>yaakua-ueboot-cloud-public</id>
+                    <id>Public Repositories</id>
                     <name>public</name>
-                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <url>https://maven.xiqiao.io/content/groups/public/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -94,9 +94,9 @@
             </properties>
             <repositories>
                 <repository>
-                    <id>yaakua-ueboot-cloud-public</id>
+                    <id>Public Repositories</id>
                     <name>public</name>
-                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <url>https://maven.xiqiao.io/content/groups/public/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -107,9 +107,9 @@
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
-                    <id>yaakua-ueboot-cloud-public</id>
+                    <id>Public Repositories</id>
                     <name>public</name>
-                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <url>https://maven.xiqiao.io/content/groups/public/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -628,10 +628,12 @@
 
     <distributionManagement>
         <repository>
-            <!--必须与 settings.xml 的 id 一致-->
-            <id>yaakua-ueboot-cloud-public</id>
-            <name>public</name>
-            <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+            <id>ueboot-release</id>
+            <url>https://maven.xiqiao.io/content/repositories/ueboot-release</url>
         </repository>
+        <snapshotRepository>
+            <id>ueboot-snapshot</id>
+            <url>https://maven.xiqiao.io/content/repositories/ueboot-snapshot</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
