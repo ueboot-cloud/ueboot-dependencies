@@ -22,32 +22,6 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <repositories>
-                <repository>
-                    <id>Public Repositories</id>
-                    <name>public</name>
-                    <url>https://maven.xiqiao.io/content/groups/public/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>Public Repositories</id>
-                    <name>public</name>
-                    <url>https://maven.xiqiao.io/content/groups/public/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
         </profile>
         <!-- 系统集成测试环境 -->
         <profile>
@@ -57,32 +31,6 @@
                 <spring.application.name>${project.artifactId}</spring.application.name>
                 <ueboot.profiles.active>none</ueboot.profiles.active>
             </properties>
-            <repositories>
-                <repository>
-                    <id>Public Repositories</id>
-                    <name>public</name>
-                    <url>https://maven.xiqiao.io/content/groups/public/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>Public Repositories</id>
-                    <name>public</name>
-                    <url>https://maven.xiqiao.io/content/groups/public/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
         </profile>
         <!-- 生产环境 -->
         <profile>
@@ -92,32 +40,6 @@
                 <spring.application.name>${project.artifactId}</spring.application.name>
                 <ueboot.profiles.active>none</ueboot.profiles.active>
             </properties>
-            <repositories>
-                <repository>
-                    <id>Public Repositories</id>
-                    <name>public</name>
-                    <url>https://maven.xiqiao.io/content/groups/public/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>Public Repositories</id>
-                    <name>public</name>
-                    <url>https://maven.xiqiao.io/content/groups/public/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
         </profile>
         <profile>
             <id>bbmt</id>
@@ -622,12 +544,12 @@
 
     <distributionManagement>
         <repository>
-            <id>ueboot-release</id>
-            <url>https://maven.xiqiao.io/content/repositories/ueboot-release</url>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2314845-snapshot-hE1K3U</url>
         </repository>
         <snapshotRepository>
-            <id>ueboot-snapshot</id>
-            <url>https://maven.xiqiao.io/content/repositories/ueboot-snapshot</url>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2314845-snapshot-hE1K3U</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
