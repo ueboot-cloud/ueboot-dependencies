@@ -551,12 +551,12 @@
 
     <distributionManagement>
         <repository>
-            <id>rdc-releases</id>
-            <url>https://packages.aliyun.com/maven/repository/2314845-snapshot-hE1K3U</url>
+            <id>ueboot-release</id>
+            <url>https://maven.xiqiao.io/content/repositories/ueboot-release</url>
         </repository>
         <snapshotRepository>
-            <id>rdc-snapshots</id>
-            <url>https://packages.aliyun.com/maven/repository/2314845-snapshot-hE1K3U</url>
+            <id>ueboot-snapshot</id>
+            <url>https://maven.xiqiao.io/content/repositories/ueboot-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
