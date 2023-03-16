@@ -121,6 +121,8 @@
         <cos.sts.oss.version>3.1.0</cos.sts.oss.version>
         <wx-java.version>4.3.0</wx-java.version>
         <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
+        <!--七牛云sdk-->
+        <qiniu.sdk.version>7.12.1</qiniu.sdk.version>
 
         <!-- 测试 -->
         <javafaker.version>1.0.2</javafaker.version>
@@ -442,7 +444,7 @@
                 <artifactId>weixin-java-pay</artifactId>
                 <version>${wx-java.version}</version>
             </dependency>
-             <dependency>
+            <dependency>
                 <groupId>com.github.binarywang</groupId>
                 <artifactId>weixin-java-open</artifactId>
                 <version>${wx-java.version}</version>
@@ -464,6 +466,12 @@
                 <groupId>com.vdurmont</groupId>
                 <artifactId>emoji-java</artifactId>
                 <version>${emoji-java.version}</version>
+            </dependency>
+            <!--七牛云对象存储SDK-->
+            <dependency>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>${qiniu.sdk.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
