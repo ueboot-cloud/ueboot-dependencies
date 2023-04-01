@@ -1,10 +1,4 @@
-/ueboot-dependencies.iml
-/ueboot-ui/node_modules/
-/ueboot-ui/.idea/
 /.idea/
-!/ueboot-ui-system/yarn.lock
-!/ueboot-ui-portal/yarn.lock
-!/ueboot-ui-system/yarn-error.log
 
 HELP.md
 target/
