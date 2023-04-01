@@ -5,7 +5,7 @@
 
     <groupId>com.ueboot.cloud</groupId>
     <artifactId>ueboot-dependencies</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>依赖管理</description>
@@ -22,6 +22,32 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
+            <repositories>
+                <repository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>yaakua-ueboot-cloud-public</id>
+                    <name>public</name>
+                    <url>https://yaakua-maven.pkg.coding.net/repository/ueboot-cloud/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
         </profile>
         <!-- 系统集成测试环境 -->
         <profile>
@@ -67,7 +93,7 @@
     </developers>
 
     <properties>
-        <ueboot.version>1.1.1-SNAPSHOT</ueboot.version>
+        <ueboot.version>1.2.0-SNAPSHOT</ueboot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
         <java.version>11</java.version>
@@ -78,14 +104,15 @@
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
 
         <!-- 框架 -->
-        <spring.boot.version>2.6.6</spring.boot.version>
-        <spring.cloud.version>2021.0.1</spring.cloud.version>
+        <spring.boot.version>2.6.13</spring.boot.version>
+        <spring.cloud.version>2021.0.4</spring.cloud.version>
         <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
         <spring.boot.admin.version>2.4.3</spring.boot.admin.version>
         <spring.rabbitmq.version>2.3.10</spring.rabbitmq.version>
         <spring.ldap.version>2.3.4.RELEASE</spring.ldap.version>
+        <jackson.version.databind>2.14.0-rc3</jackson.version.databind>
         <lombok.version>1.18.22</lombok.version>
-        <xxl-job.version>2.3.0</xxl-job.version>
+        <xxl-job.version>2.3.1</xxl-job.version>
         <sa-token.version>1.29.0</sa-token.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <mybatis-plus.generator.vesion>3.5.0</mybatis-plus.generator.vesion>
@@ -118,7 +145,6 @@
         <cos.sts.oss.version>3.1.0</cos.sts.oss.version>
         <wx-java.version>4.3.0</wx-java.version>
         <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
-        <alipay.sdk.version>2.2.2</alipay.sdk.version>
 
         <!-- 测试 -->
         <javafaker.version>1.0.2</javafaker.version>
@@ -184,6 +210,12 @@
             <version>${commmon-random.vrsion}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.apifan.common</groupId>
+            <artifactId>common-random</artifactId>
+            <version>${commmon-random.vrsion}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -235,6 +267,12 @@
                 <groupId>org.springframework.amqp</groupId>
                 <artifactId>spring-rabbit</artifactId>
                 <version>${spring.rabbitmq.version}</version>
+            </dependency>
+            <!-- 漏洞修复 -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version.databind}</version>
             </dependency>
             <!-- XXL-JOB 平台 -->
             <dependency>
@@ -323,6 +361,11 @@
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-system</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-cron</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
             <!--二维码工具-->
@@ -429,7 +472,7 @@
                 <artifactId>weixin-java-pay</artifactId>
                 <version>${wx-java.version}</version>
             </dependency>
-             <dependency>
+            <dependency>
                 <groupId>com.github.binarywang</groupId>
                 <artifactId>weixin-java-open</artifactId>
                 <version>${wx-java.version}</version>
@@ -457,6 +500,12 @@
                 <groupId>com.vdurmont</groupId>
                 <artifactId>emoji-java</artifactId>
                 <version>${emoji-java.version}</version>
+            </dependency>
+            <!--七牛云对象存储SDK-->
+            <dependency>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>${qiniu.sdk.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
