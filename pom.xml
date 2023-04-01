@@ -212,12 +212,6 @@
             <version>${commmon-random.vrsion}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.apifan.common</groupId>
-            <artifactId>common-random</artifactId>
-            <version>${commmon-random.vrsion}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>
