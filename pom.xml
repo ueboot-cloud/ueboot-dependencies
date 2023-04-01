@@ -145,6 +145,8 @@
         <cos.sts.oss.version>3.1.0</cos.sts.oss.version>
         <wx-java.version>4.3.0</wx-java.version>
         <tencentcloud.sak.version>3.1.379</tencentcloud.sak.version>
+        <alipay.sdk.version>2.2.2</alipay.sdk.version>
+        <qiniu.sdk.version>7.12.1</qiniu.sdk.version>
 
         <!-- 测试 -->
         <javafaker.version>1.0.2</javafaker.version>
